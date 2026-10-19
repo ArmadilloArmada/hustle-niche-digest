@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hustle-niche-digest"
+version = "0.1.0"
+description = "Indie/SaaS developer-tools changelog niche digest (RSS → draft → human approve)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "feedparser>=6.0.11",
+  "PyYAML>=6.0.2",
+  "httpx>=0.27.0",
+  "openai>=1.40.0",
+]
+
+[project.scripts]
+niche-digest = "niche_digest.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

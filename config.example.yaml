@@ -1,0 +1,25 @@
+# Niche: Indie / SaaS developer-tools changelogs & releases
+# Copy to config.yaml:  cp config.example.yaml config.yaml
+
+niche_name: "Indie & SaaS DevTools Changelogs"
+max_items: 8
+user_agent: "hustle-niche-digest/0.1 (+https://github.com/ArmadilloArmada/hustle-niche-digest; public-RSS-only)"
+
+# Public Atom/RSS feeds only (GitHub Releases Atom + well-known product blogs).
+feeds:
+  - name: GitHub CLI
+    url: https://github.com/cli/cli/releases.atom
+  - name: uv (Astral)
+    url: https://github.com/astral-sh/uv/releases.atom
+  - name: Next.js
+    url: https://github.com/vercel/next.js/releases.atom
+  - name: Supabase
+    url: https://github.com/supabase/supabase/releases.atom
+  - name: FastAPI
+    url: https://github.com/fastapi/fastapi/releases.atom
+  - name: Docker Compose
+    url: https://github.com/docker/compose/releases.atom
+  - name: Stripe CLI
+    url: https://github.com/stripe/stripe-cli/releases.atom
+  - name: Terraform
+    url: https://github.com/hashicorp/terraform/releases.atom
