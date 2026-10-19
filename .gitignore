@@ -9,6 +9,9 @@ venv/
 .env
 config.yaml
 out/*.md
+out/*.approved
+out/approved/
+out/export/
 !out/.gitkeep
 .DS_Store
 .pytest_cache/
