@@ -105,6 +105,10 @@ Without `APPROVED=1` / `--i-approved`, local export files are still written; the
 | `BUTTONDOWN_API_KEY` | No | If set **and** `APPROVED=1` / `--i-approved`, create a Buttondown **draft** only |
 | `APPROVED` | No | Set to `1` to open the ESP draft gate (same as `--i-approved`) |
 
+## Weekly schedule (GitHub Actions)
+
+Every Monday at **14:05 UTC**, [`.github/workflows/weekly-niche-digest.yml`](.github/workflows/weekly-niche-digest.yml) runs a **draft-only** pipeline and uploads artifact **`niche-digest-draft`** (no approve/export/send). Download from the Actions run → **Artifacts**, unzip into `out/`, then approve + export locally.
+
 ## Compliance
 
 - **Public RSS/Atom only.** Do not add scrapers that ignore robots.txt or site ToS.
