@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "hustle-niche-digest"
-version = "0.1.0"
-description = "Indie/SaaS developer-tools changelog niche digest (RSS → draft → human approve)"
+version = "0.2.0"
+description = "Indie/SaaS developer-tools changelog niche digest (RSS → draft → approve → export)"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
